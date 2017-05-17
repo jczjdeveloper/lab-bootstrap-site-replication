@@ -1,0 +1,179 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* NAV */
+
+
+ul li {
+  display: inline;
+}
+
+/* ******   NAV 1   ******* */
+
+.nav1 {
+  font-size: 13px;
+  line-height: 32px;
+  max-height: 32px;
+  background-color: #000000;
+  position: relative;
+  width: auto%;
+}
+
+.nav1 a{
+  color: gray;
+}
+
+.nav1left li:first-child {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.nav1left {
+  padding-left: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.nav1left li {
+  padding-right: 10px;
+}
+
+.nav1right {
+  padding-right: 10px;
+  text-align: right;
+  width: 100%;
+}
+
+.nav1right li {
+  padding-left: 10px;
+}
+
+/* ******   NAV 2   ******* */
+
+.nav2 {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 32px;
+  max-height: 32px;
+  position: relative;
+  width: auto%;
+}
+
+.nav2 a{
+  color: gray;
+  text-transform: uppercase;
+}
+
+.nav2left li:first-child {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.nav2left {
+  padding-left: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.nav2left li {
+  padding-right: 10px;
+}
+
+.nav2right {
+  padding-right: 10px;
+  text-align: right;
+  width: 100%;
+}
+
+.nav2right li {
+  padding-left: 10px;
+}
+
+/* ******   COVER PICTURES   ******* */
+
+.cover {
+  height: 306px;
+  max-height: 306px;
+  max-width: 1425px;
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* ******   COVER BIG  ******* */
+
+.coverbig {
+  height: 100%x;
+  width: 100%;
+}
+
+/* ******   COVER SMALL  ******* */
+
+.coversmall1 {
+  max-height: 100%;
+  width: 100%;
+}
+
+.coversmall2 {
+  max-height: 100%;
+  width: 100%;
+}
+
+/* ******   MAIN CONTENT  ******* */
+
+main {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.ln {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.ln a {
+  color: orange;
+  font-weight: bold;
+}
+
+.lncontent1 img {
+  max-height: 135px;
+  max-width: 270px;
+  width: auto;
+}
+
+.lncontent2 img {
+  max-height: 135px;
+  max-width: 270px;
+  width: auto;
+}
+
+.conference {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.conference a {
+  color: orange;
+  font-weight: bold;
+}
+
+.concontent img {
+  max-height: 135px;
+  max-width: 270px;
+  width: auto;
+}
+
+.lf a {
+  color: orange;
+  font-weight: bold;
+}
+
+.lflinks a:not(:first-child):before {
+  content: " | ";
+}
